@@ -180,6 +180,7 @@ void solve_rk2 (fftw_complex *omega_ft, fftw_complex *omega_t, fftw_complex *x_v
 	}
 	//openmp_e
 
+	// the mean velocity should be integrated separately, especially for high values of activity
 	find_vel_ft( omega_ft, x_vel_ft, y_vel_ft);
 	init_den_state();
 }
